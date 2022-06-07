@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-const Login = () => {
+const Login = ({authed, setAuth}) => {
   // React States
   const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   // User Login info
   const database = [
@@ -39,7 +38,7 @@ const Login = () => {
         // Invalid password
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
-        setIsSubmitted(true);
+        setAuth(true);
       }
     } else {
       // Username not found
@@ -73,12 +72,17 @@ const Login = () => {
       </form>
     </div>
   );
+  
+  const Logout = (event) => {
+    event.preventDefault();
+    setAuth(false);
+  }
 
   return (
     <div className="app">
       <div className="login-form">
         <div className="title"></div>
-        {isSubmitted ?   <div className="container">
+        {authed ?   <div className="container">
 
             <div className="wrap">
              <Link to="/user">	
@@ -92,7 +96,7 @@ const Login = () => {
                 <div className="circle angled second"></div>
                 </Link>
             </div> 
-
+            <button onClick={Logout}>Logout</button>
         </div> : renderForm}
       </div>
     </div>

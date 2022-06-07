@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
-import Navbar from './Navbar'
-import Main from './Main'
+import React from 'react';
 import './App.css';
 import Routing from './Routing';
 
 
-class App extends Component {
-
-  render() {
-
+function App() {
     return (
       <div>
         <Routing>
@@ -16,6 +11,6 @@ class App extends Component {
       </div>
     );
   }
-}
+
 
 export default App;
