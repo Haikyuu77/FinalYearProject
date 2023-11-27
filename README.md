@@ -1,6 +1,6 @@
 # hox
-Hox is a decentralised application build using React js, solidity, eth and web3.js. Start hoxing the centralised cloud storage! 
-Decentralisation is something that has always fascinated us, ever since i started google drive i used to think how google can do anything with our data.we had concerns over data leaks from centralised server storage of information.Decentralized storage is a potential solution that Blockchain companies are researching and implementing.
+Hox is a decentralised application build using React js, solidity, eth and web3.js. Start hoxing the centralised cloud storage!.
+Decentralisation is something that has always fascinated me, ever since I started usinng google drive, I used to think how google can do anything with our data. We had concerns over data leaks from centralised server storage of information. Decentralized storage is a potential solution that Blockchain companies are researching and implementing.
 
 
 <br/>
